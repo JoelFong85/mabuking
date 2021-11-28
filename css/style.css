@@ -13,6 +13,13 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: 'clarendon';
+  src: url("../fonts/dl/Clarendon\ Bold\ V1.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -28,7 +35,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #000000;
   line-height: 1.5;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'clarendon';
 }
 
 h1 {
@@ -1849,14 +1856,16 @@ section[data-section="menu"] {
 
 /* Flexslider override style */
 .slider-height, .flexslider, .flexslider .slides > li {
-  height: 1200px;
+  height: 1100px;
 }
 
 @media screen and (max-width: 480px) {
   .slider-height, .flexslider, .flexslider .slides > li {
-    height: 280px;
+    height: 220px;
   }
 }
+
+
 
 .probootstrap-heading .primary-heading {
   font-family: "Pinyon Script", serif;
@@ -1878,7 +1887,7 @@ section[data-section="menu"] {
   margin: 0;
   padding: 0;
   letter-spacing: .05em;
-  font-size: 50px;
+  font-size: 60px;
   position: relative;
   top: -50px;
   font-weight: 700;
@@ -1911,12 +1920,12 @@ section[data-section="menu"] {
 }
 
 .flexslider .probootstrap-slider-text {
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 @media screen and (max-width: 480px) {
   .flexslider .probootstrap-slider-text {
-    margin-top: 150px;
+    margin-top: 20px;
   }
 }
 
@@ -2148,14 +2157,14 @@ section[data-section="menu"] {
 
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 24px;
-  background: #ffa33e !important;
+  background: #FFA33E !important;
   padding: 12px;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
 
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-  background: #ffa33e !important;
+  background: #FFA33E !important;
 }
 
 .owl-theme .owl-dots {
@@ -2341,4 +2350,24 @@ section[data-section="menu"] {
 
 .fa-instagram, .fa-facebook-square, .fa-shopping-cart, .fa-whatsapp{
   color: white;
+}
+
+.mabuking-logo{
+  max-width: 30%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .mabuking-logo{
+    max-width: 20%;
+  }
+  .probootstrap-heading .secondary-heading {
+    font-size: 30px;
+  }
+  .flexslider .probootstrap-slider-text .sub-heading {
+    font-size: 15px;
+  }
 }
